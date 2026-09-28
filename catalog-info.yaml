@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: greeting
+  description: "Service that greet our users"
+  annotations:
+    github.com/project-slug: camnoss/greeting
+    backstage.io/kubernetes-id: greeting
+    argocd/app-name: greeting-dev
+  tags:
+    - go
+    - gin
+spec:
+  type: service
+  lifecycle: experimental
+  owner: group:default/guests
